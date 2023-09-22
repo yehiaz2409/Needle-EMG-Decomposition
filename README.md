@@ -36,16 +36,26 @@ The code implements the needle EMG decomposition algorithm to detect and decompo
 In this section, we present the results obtained from the implementation of the needle EMG decomposition algorithm. The code successfully detects and decomposes MUAPs in the EMG signal, providing insights into the waveform characteristics and templates. The following screenshots demonstrate the different stages of the decomposition process:
 
 1. **Signal before rectification**: The screenshot displays the original EMG signal from sample 30000 to sample 35000 before rectification. It provides a visual representation of the raw signal, showing the fluctuations and variations in the recorded electrical activity. The waveform may exhibit different amplitudes and durations.
+2. ![Original](first.jpg)
 
-2. **Signal after rectification**: The rectified EMG signal is shown in this image. Rectification involves taking the absolute value of the EMG signal, resulting in a unipolar representation. This process eliminates negative components, allowing for easier detection and analysis of the MUAPs.
+3. **Signal after rectification**: The rectified EMG signal is shown in this image. Rectification involves taking the absolute value of the EMG signal, resulting in a unipolar representation. This process eliminates negative components, allowing for easier detection and analysis of the MUAPs.
+4. ![rectified](rectified.jpeg)
 
-3. **Signal after applying the moving average filter**: The filtered EMG signal is presented in this image. The moving average filter is applied to smooth out the signal and reduce noise interference. The resulting waveform shows a smoother representation of the underlying MUAPs.
+5. **Signal after applying the moving average filter**: The filtered EMG signal is presented in this image. The moving average filter is applied to smooth out the signal and reduce noise interference. The resulting waveform shows a smoother representation of the underlying MUAPs.
+6. ![AUC Logo](filtered.png)
 
-4. **Three MUAP templates**: The screenshot displays the templates extracted during the decomposition process. Each template represents a distinct MUAP waveform with unique characteristics. The templates may differ in peak amplitude, duration, shape, and other properties. These templates serve as references for identifying and categorizing MUAPs in the EMG signal.
+7. **Three MUAP templates**: The screenshot displays the templates extracted during the decomposition process. Each template represents a distinct MUAP waveform with unique characteristics. The templates may differ in peak amplitude, duration, shape, and other properties. These templates serve as references for identifying and categorizing MUAPs in the EMG signal.
+8. ![template_1](Template_1.jpeg)
+9. ![template_2](Template_2.jpeg)
+10. ![template_3](Template_3.jpeg)
 
-5. **Signal with “*” and colored MUAPs**: The screenshot displays a segment of the EMG signal from sample 30000 to sample 35000. Detected MUAPs are marked with asterisks ("*") and colored based on the associated MU, red for template 1, blue for template 2, green for template 3.
+11. **Signal with “*” and colored MUAPs**: The screenshot displays a segment of the EMG signal from sample 30000 to sample 35000. Detected MUAPs are marked with asterisks ("*") and colored based on the associated MU, red for template 1, blue for template 2, green for template 3.
+12. ![detected](DetectedMUAP.jpg)
 
-6. **Spectrum of signal**: It is representing the MUAPs of each detected MU. It constructs a binary vector for each MU, with one indicating the time of MUAP generation, and zero otherwise. Then we find the spectrum of each of the three binary vectors using FFT.
+13. **Spectrum of signal**: It is representing the MUAPs of each detected MU. It constructs a binary vector for each MU, with one indicating the time of MUAP generation, and zero otherwise. Then we find the spectrum of each of the three binary vectors using FFT.
+14. ![Spectrum_1](Spectrum_1.jpeg)
+15. ![Spectrum_2](Spectrum_2.jpeg)
+16. ![Spectrum_3](Spectrum_3.jpeg)
 
 ## Repository Structure
 
