@@ -36,7 +36,7 @@ The code implements the needle EMG decomposition algorithm to detect and decompo
 In this section, we present the results obtained from the implementation of the needle EMG decomposition algorithm. The code successfully detects and decomposes MUAPs in the EMG signal, providing insights into the waveform characteristics and templates. The following screenshots demonstrate the different stages of the decomposition process:
 
 1. **Signal before rectification**: The screenshot displays the original EMG signal from sample 30000 to sample 35000 before rectification. It provides a visual representation of the raw signal, showing the fluctuations and variations in the recorded electrical activity. The waveform may exhibit different amplitudes and durations.
-2. ![Original](first.jpg)
+2. ![Original](First.jpg)
 
 3. **Signal after rectification**: The rectified EMG signal is shown in this image. Rectification involves taking the absolute value of the EMG signal, resulting in a unipolar representation. This process eliminates negative components, allowing for easier detection and analysis of the MUAPs.
 4. ![rectified](rectified.jpeg)
@@ -57,18 +57,6 @@ In this section, we present the results obtained from the implementation of the 
 15. ![Spectrum_2](Spectrum_2.jpeg)
 16. ![Spectrum_3](Spectrum_3.jpeg)
 
-## Repository Structure
-
-The project repository is organized as follows:
-
-- `code/`: Contains the MATLAB or Python code implementing the Needle EMG Decomposition algorithm.
-- `figures/`: Contains visual representations of the detected MUAPs, waveform templates, and spectrum images.
-- `data/`: Contains the EMG signal data used for analysis.
-
-## Usage
-
-1. Clone this repository to your local machine.
-2. Navigate to the `code/` directory and run the provided code to perform the Needle EMG Decomposition on your EMG signal data.
 
 ## Acknowledgments
 
