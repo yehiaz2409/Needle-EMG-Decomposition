@@ -60,6 +60,6 @@ In this section, we present the results obtained from the implementation of the 
 
 ## Acknowledgments
 
-- This project is part of the CSCE 363/3611 – Digital Signal Processing course at The American University in Cairo, Summer 2023.
+- This project is part of the CSCE 363/3611 – Digital Signal Processing course, under the supervision of Dr. Seif Eldawlatly, at The American University in Cairo, Summer 2023.
 
 For more details, please refer to the project documentation and code provided in this repository. If you have any questions or need further assistance, feel free to contact the project contributors.
